@@ -1,0 +1,9 @@
+[project]
+name = "ai-research-neu"
+version = "0.1.0"
+description = "Small Python code toolkit for AI research experiments."
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
