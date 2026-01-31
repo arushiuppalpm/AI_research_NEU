@@ -10,3 +10,7 @@ def normalize(value: str) -> str:
 
 def tokenize(value: str) -> list[str]:
     return normalize(value).split()
+def text_step_02(value: str) -> list[str]:
+    """Tokenize normalized text for feature step 2."""
+    return tokenize(value)
+
