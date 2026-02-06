@@ -7,3 +7,8 @@ class ExperimentResult:
     name: str
     score: float
     predictions: list[str]
+def experiment_step_05(name: str, predictions: list[str]) -> ExperimentResult:
+    """Create a scored experiment result for iteration 5."""
+    score = len([item for item in predictions if item]) / len(predictions) if predictions else 0.0
+    return ExperimentResult(name=name, score=score, predictions=predictions)
+
