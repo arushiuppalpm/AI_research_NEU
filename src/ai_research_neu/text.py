@@ -22,3 +22,7 @@ def text_step_14(value: str) -> list[str]:
     """Tokenize normalized text for feature step 14."""
     return tokenize(value)
 
+def text_step_20(value: str) -> list[str]:
+    """Tokenize normalized text for feature step 20."""
+    return tokenize(value)
+
