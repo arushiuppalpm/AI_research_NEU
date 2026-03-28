@@ -7,3 +7,6 @@ def test_generated_code_step_10():
 def test_generated_code_step_20():
     assert 20 >= 1
 
+def test_generated_code_step_30():
+    assert 30 >= 1
+
