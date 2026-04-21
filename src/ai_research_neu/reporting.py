@@ -24,3 +24,7 @@ def report_step_36(result: ExperimentResult) -> dict[str, object]:
     """Render a compact report row for iteration 36."""
     return {"name": result.name, "score": round(result.score, 4), "predictions": len(result.predictions)}
 
+def report_step_42(result: ExperimentResult) -> dict[str, object]:
+    """Render a compact report row for iteration 42."""
+    return {"name": result.name, "score": round(result.score, 4), "predictions": len(result.predictions)}
+
