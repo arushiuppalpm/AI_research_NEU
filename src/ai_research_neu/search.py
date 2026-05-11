@@ -74,3 +74,12 @@ def search_step_46(query: str, row: Example) -> float:
     r_norm = sum(value * value for value in r.values()) ** 0.5
     return numerator / (q_norm * r_norm) if q_norm and r_norm else 0.0
 
+def search_step_52(query: str, row: Example) -> float:
+    """Score a query against one example for retrieval step 52."""
+    q = Counter(tokenize(query))
+    r = Counter(tokenize(row.text))
+    numerator = sum(q[token] * r.get(token, 0) for token in q)
+    q_norm = sum(value * value for value in q.values()) ** 0.5
+    r_norm = sum(value * value for value in r.values()) ** 0.5
+    return numerator / (q_norm * r_norm) if q_norm and r_norm else 0.0
+
