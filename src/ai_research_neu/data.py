@@ -39,3 +39,7 @@ def data_step_49(rows: list[Example]) -> list[Example]:
     """Return a stable copy of examples for research step 49."""
     return sorted(list(rows), key=lambda row: row.id)
 
+def data_step_55(rows: list[Example]) -> list[Example]:
+    """Return a stable copy of examples for research step 55."""
+    return sorted(list(rows), key=lambda row: row.id)
+
