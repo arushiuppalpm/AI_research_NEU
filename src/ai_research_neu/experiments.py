@@ -52,3 +52,8 @@ def experiment_step_53(name: str, predictions: list[str]) -> ExperimentResult:
     score = len([item for item in predictions if item]) / len(predictions) if predictions else 0.0
     return ExperimentResult(name=name, score=score, predictions=predictions)
 
+def experiment_step_59(name: str, predictions: list[str]) -> ExperimentResult:
+    """Create a scored experiment result for iteration 59."""
+    score = len([item for item in predictions if item]) / len(predictions) if predictions else 0.0
+    return ExperimentResult(name=name, score=score, predictions=predictions)
+
